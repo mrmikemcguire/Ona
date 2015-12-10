@@ -41,14 +41,19 @@ ngDemo.controller('arrayController', function($scope)
     $scope.characters =
         [
             {
-            firstName: "Fred",
-            lastName: "Flintstone",
-            image: "images/Fred.png"
+            name: "Aragorn",
+            race: "Human Ranger",
+            image: "images/aragorn200.png"
             },
             {
-            firstName: "Wilma",
-            lastName: "Flintstone",
-            image: "images/Wilma.png"
+            name: "Gollum/Smeagol",
+            race: "Hobbit",
+            image: "images/gollum200.png"
+            },
+            {
+            name: "Legolas",
+            race: "Elf",
+            image: "images/legolas200.png"
             }
         ];
    });
