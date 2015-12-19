@@ -13,10 +13,10 @@ ngDemo.config(function($routeProvider)
               templateUrl : 'pages/cost.html',
               controller  : 'costController'
 			  })
-            .when('/array', 
+            .when('/play', 
               {
-              templateUrl : 'pages/array.html',
-              controller  : 'arrayController'
+              templateUrl : 'pages/play.html',
+              controller  : 'playController'
               })
         .when('/input', 
               {
@@ -27,7 +27,7 @@ ngDemo.config(function($routeProvider)
 
 ngDemo.controller('mainController', function($scope) 
     {
-    $scope.message = 'See what cool things Angular can do!';
+    $scope.message = 'This is the First Adventure Game of Riona McGuire!';
 	});
 
 ngDemo.controller('costController', function($scope) 
@@ -36,19 +36,14 @@ ngDemo.controller('costController', function($scope)
     $scope.price = 9.99;
 	});
 
-ngDemo.controller('arrayController', function($scope)
+ngDemo.controller('playController', function($scope)
     {
-    $scope.characters =
+    $scope.locations =
         [
             {
             name: "Aragorn",
             race: "Human Ranger",
             image: "images/aragorn200.png"
-            },
-            {
-            name: "Gollum/Smeagol",
-            race: "Hobbit",
-            image: "images/gollum200.png"
             },
             {
             name: "Legolas",
